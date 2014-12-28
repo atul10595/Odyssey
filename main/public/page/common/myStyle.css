@@ -1,0 +1,386 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:100,200,300,400,500,600);
+/* line 2, /home/atul/Documents/web/odyssey/me/Odyssey15/Dance/Ego WordPress Theme by UDTHEMES_files/myStyle.scss */
+#wrapper {
+  cursor: default; }
+
+/* line 3, /home/atul/Documents/web/odyssey/me/Odyssey15/Dance/Ego WordPress Theme by UDTHEMES_files/myStyle.scss */
+html {
+  background-color: white; }
+
+/* line 4, /home/atul/Documents/web/odyssey/me/Odyssey15/Dance/Ego WordPress Theme by UDTHEMES_files/myStyle.scss */
+.noscroll {
+  overflow: hidden;
+  padding-right: 13px; }
+
+/* line 9, /home/atul/Documents/web/odyssey/me/Odyssey15/Dance/Ego WordPress Theme by UDTHEMES_files/myStyle.scss */
+.modal {
+  display: none;
+  top: 5%;
+  position: fixed;
+  font-family: 'Lato', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif !important;
+    font-weight: 300;
+  z-index: 888;
+  width: 600px;
+  height: 600px;
+  box-shadow: 0px 0px 7px 2px #000; }
+
+/* line 22, /home/atul/Documents/web/odyssey/me/Odyssey15/Dance/Ego WordPress Theme by UDTHEMES_files/myStyle.scss */
+.modalL ol {
+    overflow-y: scroll;
+  overflow-x: hidden;
+  word-wrap: break-word;
+  position: absolute;
+  display: block;
+    
+  width: 650px;
+  height: 540px;
+    margin-top: 50px;
+  margin-left: 15px; }
+
+.modalL ul {
+      float: none;
+
+}
+
+/* line 32, /home/atul/Documents/web/odyssey/me/Odyssey15/Dance/Ego WordPress Theme by UDTHEMES_files/myStyle.scss */
+.nano .nano-pane {
+  background: #aaa; }
+
+/* line 36, /home/atul/Documents/web/odyssey/me/Odyssey15/Dance/Ego WordPress Theme by UDTHEMES_files/myStyle.scss */
+.nano .nano-slider {
+  background: #888; }
+
+/* line 40, /home/atul/Documents/web/odyssey/me/Odyssey15/Dance/Ego WordPress Theme by UDTHEMES_files/myStyle.scss */
+.rulebook ol li {
+  width: 100%;
+  color: white;
+  text-align: center;
+  padding: 10px 5px;
+  width: 100%;
+  text-align: left; 
+    font-style: italic;
+    font-size: 14px;
+}
+
+/* line 48, /home/atul/Documents/web/odyssey/me/Odyssey15/Dance/Ego WordPress Theme by UDTHEMES_files/myStyle.scss */
+.rulebook {
+  position: absolute;
+  top: 0;
+  padding: 10px;
+  width: 97.5%;
+  height: 96.6%;
+  color: white; 
+left:30px;
+}
+
+/* line 57, /home/atul/Documents/web/odyssey/me/Odyssey15/Dance/Ego WordPress Theme by UDTHEMES_files/myStyle.scss */
+.bgRules {
+  width: 100%;
+  height: 100%;
+  background: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  -ms-filter: "alpha(opacity=20)";
+  filter: alpha(opacity=20);
+  opacity: 0.2; }
+
+/* line 71, /home/atul/Documents/web/odyssey/me/Odyssey15/Dance/Ego WordPress Theme by UDTHEMES_files/myStyle.scss */
+.modalL {
+  left: -1100px;
+  width: 750px;
+  background-color: black; }
+
+/* line 79, /home/atul/Documents/web/odyssey/me/Odyssey15/Dance/Ego WordPress Theme by UDTHEMES_files/myStyle.scss */
+.modalR {
+  right: -150px;
+  border-radius: 100%;
+  background-color: #000;
+  background-position: center;
+  overflow: hidden; }
+
+/* line 89, /home/atul/Documents/web/odyssey/me/Odyssey15/Dance/Ego WordPress Theme by UDTHEMES_files/myStyle.scss */
+.bgRulesForModalR {
+  width: 200%;
+  height: 200%;
+  background: no-repeat;
+  top: -50px;
+  background-position: center;
+  position: absolute;
+  -webkit-animation: zoomInOut;
+  -webkit-animation-duration: 24s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -moz-animation: zoomInOut;
+  -moz-animation-duration: 24s;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: linear;
+  -ms-animation: zoomInOut;
+  -ms-animation-duration: 24s;
+  -ms-animation-iteration-count: infinite;
+  -ms-animation-timing-function: linear;
+  animation: zoomInOut;
+  animation-duration: 24s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; }
+
+@-webkit-keyframes zoomInOut {
+  /* line 122, /home/atul/Documents/web/odyssey/me/Odyssey15/Dance/Ego WordPress Theme by UDTHEMES_files/myStyle.scss */
+  0% {
+    margin-left: -50px; }
+
+  /* line 125, /home/atul/Documents/web/odyssey/me/Odyssey15/Dance/Ego WordPress Theme by UDTHEMES_files/myStyle.scss */
+  50% {
+    margin-left: -230px; }
+
+  /* line 128, /home/atul/Documents/web/odyssey/me/Odyssey15/Dance/Ego WordPress Theme by UDTHEMES_files/myStyle.scss */
+  100% {
+    margin-left: -50px; } }
+
+@-moz-keyframes zoomInOut {
+  /* line 133, /home/atul/Documents/web/odyssey/me/Odyssey15/Dance/Ego WordPress Theme by UDTHEMES_files/myStyle.scss */
+  0% {
+    margin-left: -50px; }
+
+  /* line 136, /home/atul/Documents/web/odyssey/me/Odyssey15/Dance/Ego WordPress Theme by UDTHEMES_files/myStyle.scss */
+  50% {
+    margin-left: -230px; }
+
+  /* line 139, /home/atul/Documents/web/odyssey/me/Odyssey15/Dance/Ego WordPress Theme by UDTHEMES_files/myStyle.scss */
+  100% {
+    margin-left: -50px; } }
+
+@-ms-keyframes zoomInOut {
+  /* line 145, /home/atul/Documents/web/odyssey/me/Odyssey15/Dance/Ego WordPress Theme by UDTHEMES_files/myStyle.scss */
+  0% {
+    margin-left: -50px; }
+
+  /* line 148, /home/atul/Documents/web/odyssey/me/Odyssey15/Dance/Ego WordPress Theme by UDTHEMES_files/myStyle.scss */
+  50% {
+    margin-left: -230px; }
+
+  /* line 151, /home/atul/Documents/web/odyssey/me/Odyssey15/Dance/Ego WordPress Theme by UDTHEMES_files/myStyle.scss */
+  100% {
+    margin-left: -50px; } }
+
+/* Standard syntax */
+@keyframes zoomInOut {
+  /* line 158, /home/atul/Documents/web/odyssey/me/Odyssey15/Dance/Ego WordPress Theme by UDTHEMES_files/myStyle.scss */
+  0% {
+    margin-left: -50px; }
+
+  /* line 161, /home/atul/Documents/web/odyssey/me/Odyssey15/Dance/Ego WordPress Theme by UDTHEMES_files/myStyle.scss */
+  50% {
+    margin-left: -230px; }
+
+  /* line 164, /home/atul/Documents/web/odyssey/me/Odyssey15/Dance/Ego WordPress Theme by UDTHEMES_files/myStyle.scss */
+  100% {
+    margin-left: -50px; } }
+
+@media screen and (max-width: 800px) {
+  /* line 170, /home/atul/Documents/web/odyssey/me/Odyssey15/Dance/Ego WordPress Theme by UDTHEMES_files/myStyle.scss */
+  .modal {
+    margin-left: -90px; }
+
+  /* line 173, /home/atul/Documents/web/odyssey/me/Odyssey15/Dance/Ego WordPress Theme by UDTHEMES_files/myStyle.scss */
+  .modalR {
+    margin-top: 500px; }
+ }
+
+/* line 177, /home/atul/Documents/web/odyssey/me/Odyssey15/Dance/Ego WordPress Theme by UDTHEMES_files/myStyle.scss */
+#wrapper {
+  overflow: hidden; }
+
+/* line 188, /home/atul/Documents/web/odyssey/me/Odyssey15/Dance/Ego WordPress Theme by UDTHEMES_files/myStyle.scss */
+.animL {
+  -webkit-animation: myfirst 2s;
+  -webkit-animation-fill-mode: forwards;
+  -webkit-animation-timing-function: bezier(0.42, 0, 0.58, 1);
+  animation: myfirst 2s;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+  -ms-animation: myfirst 2s;
+  -ms-animation-fill-mode: forwards;
+  -ms-animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-animation: myfirst 2s;
+  -moz-animation-fill-mode: forwards;
+  -moz-animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1); }
+
+/* line 205, /home/atul/Documents/web/odyssey/me/Odyssey15/Dance/Ego WordPress Theme by UDTHEMES_files/myStyle.scss */
+.animR {
+  -webkit-animation: mysecond 2s;
+  -webkit-animation-fill-mode: forwards;
+  -webkit-animation-timing-function: bezier(0.42, 0, 0.58, 1);
+  -moz-animation: mysecond 2s;
+  -moz-animation-fill-mode: forwards;
+  -ms-animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+  -ms-animation: mysecond 2s;
+  -ms-animation-fill-mode: forwards;
+  -moz-animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+  animation: mysecond 2s;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1); }
+
+/* line 223, /home/atul/Documents/web/odyssey/me/Odyssey15/Dance/Ego WordPress Theme by UDTHEMES_files/myStyle.scss */
+.animLL {
+  -webkit-animation-direction: alternate;
+  -ms-animation-direction: alternate;
+  -moz-animation-direction: alternate;
+  animation-direction: alternate; }
+
+/* line 229, /home/atul/Documents/web/odyssey/me/Odyssey15/Dance/Ego WordPress Theme by UDTHEMES_files/myStyle.scss */
+.animRR {
+  -webkit-animation-direction: alternate;
+  -moz-animation-direction: alternate;
+  -ms-animation-direction: alternate;
+  animation-direction: alternate; }
+
+/* line 235, /home/atul/Documents/web/odyssey/me/Odyssey15/Dance/Ego WordPress Theme by UDTHEMES_files/myStyle.scss */
+.spanExitButton {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  cursor: default;
+  font-size: 50px;
+  color: white;
+  margin-left: 5px;
+  font-weight: 100; }
+
+/* line 248, /home/atul/Documents/web/odyssey/me/Odyssey15/Dance/Ego WordPress Theme by UDTHEMES_files/myStyle.scss */
+.spanExitButton:hover {
+  font-size: 60px; }
+
+/* line 251, /home/atul/Documents/web/odyssey/me/Odyssey15/Dance/Ego WordPress Theme by UDTHEMES_files/myStyle.scss */
+.hideMe {
+  display: none; }
+
+/* line 254, /home/atul/Documents/web/odyssey/me/Odyssey15/Dance/Ego WordPress Theme by UDTHEMES_files/myStyle.scss */
+.showMe {
+  display: block; }
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes myfirst {
+  /* line 260, /home/atul/Documents/web/odyssey/me/Odyssey15/Dance/Ego WordPress Theme by UDTHEMES_files/myStyle.scss */
+  from {
+    left: -1110px; }
+
+  /* line 263, /home/atul/Documents/web/odyssey/me/Odyssey15/Dance/Ego WordPress Theme by UDTHEMES_files/myStyle.scss */
+  to {
+    left: 28px; } }
+
+@-moz-keyframes myfirst {
+  /* line 268, /home/atul/Documents/web/odyssey/me/Odyssey15/Dance/Ego WordPress Theme by UDTHEMES_files/myStyle.scss */
+  from {
+    left: -1110px; }
+
+  /* line 271, /home/atul/Documents/web/odyssey/me/Odyssey15/Dance/Ego WordPress Theme by UDTHEMES_files/myStyle.scss */
+  to {
+    left: 28px; } }
+
+@-ms-keyframes myfirst {
+  /* line 277, /home/atul/Documents/web/odyssey/me/Odyssey15/Dance/Ego WordPress Theme by UDTHEMES_files/myStyle.scss */
+  from {
+    left: -1110px; }
+
+  /* line 280, /home/atul/Documents/web/odyssey/me/Odyssey15/Dance/Ego WordPress Theme by UDTHEMES_files/myStyle.scss */
+  to {
+    left: 28px; } }
+
+@keyframes myfirst {
+  /* line 286, /home/atul/Documents/web/odyssey/me/Odyssey15/Dance/Ego WordPress Theme by UDTHEMES_files/myStyle.scss */
+  from {
+    left: -1110px; }
+
+  /* line 289, /home/atul/Documents/web/odyssey/me/Odyssey15/Dance/Ego WordPress Theme by UDTHEMES_files/myStyle.scss */
+  to {
+    left: 28px; } }
+
+/* line 294, /home/atul/Documents/web/odyssey/me/Odyssey15/Dance/Ego WordPress Theme by UDTHEMES_files/myStyle.scss */
+.lightsDim {
+  -webkit-animation: lightsOff 1.5s;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation: lightsOff 1.5s;
+  -moz-animation-fill-mode: forwards;
+  -ms-animation: lightsOff 1.5s;
+  -ms-animation-fill-mode: forwards;
+  animation: lightsOff 1.5s;
+  animation-fill-mode: forwards; }
+
+@keyframes lightsOff {
+  /* line 310, /home/atul/Documents/web/odyssey/me/Odyssey15/Dance/Ego WordPress Theme by UDTHEMES_files/myStyle.scss */
+  from {
+    opacity: 1; }
+
+  /* line 313, /home/atul/Documents/web/odyssey/me/Odyssey15/Dance/Ego WordPress Theme by UDTHEMES_files/myStyle.scss */
+  to {
+    opacity: 0.5; } }
+
+@-webkit-keyframes lightsOff {
+  /* line 318, /home/atul/Documents/web/odyssey/me/Odyssey15/Dance/Ego WordPress Theme by UDTHEMES_files/myStyle.scss */
+  from {
+    opacity: 1; }
+
+  /* line 321, /home/atul/Documents/web/odyssey/me/Odyssey15/Dance/Ego WordPress Theme by UDTHEMES_files/myStyle.scss */
+  to {
+    opacity: 0.5; } }
+
+@-moz-keyframes lightsOff {
+  /* line 326, /home/atul/Documents/web/odyssey/me/Odyssey15/Dance/Ego WordPress Theme by UDTHEMES_files/myStyle.scss */
+  from {
+    opacity: 1; }
+
+  /* line 329, /home/atul/Documents/web/odyssey/me/Odyssey15/Dance/Ego WordPress Theme by UDTHEMES_files/myStyle.scss */
+  to {
+    opacity: 0.5; } }
+
+@-ms-keyframes lightsOff {
+  /* line 335, /home/atul/Documents/web/odyssey/me/Odyssey15/Dance/Ego WordPress Theme by UDTHEMES_files/myStyle.scss */
+  from {
+    opacity: 1; }
+
+  /* line 338, /home/atul/Documents/web/odyssey/me/Odyssey15/Dance/Ego WordPress Theme by UDTHEMES_files/myStyle.scss */
+  to {
+    opacity: 0.5; } }
+
+/* Standard syntax */
+@-webkit-keyframes mysecond {
+  /* line 347, /home/atul/Documents/web/odyssey/me/Odyssey15/Dance/Ego WordPress Theme by UDTHEMES_files/myStyle.scss */
+  from {
+    right: -700px; }
+
+  /* line 350, /home/atul/Documents/web/odyssey/me/Odyssey15/Dance/Ego WordPress Theme by UDTHEMES_files/myStyle.scss */
+  to {
+    right: 30px; } }
+
+@-moz-keyframes mysecond {
+  /* line 356, /home/atul/Documents/web/odyssey/me/Odyssey15/Dance/Ego WordPress Theme by UDTHEMES_files/myStyle.scss */
+  from {
+    right: -700px; }
+
+  /* line 359, /home/atul/Documents/web/odyssey/me/Odyssey15/Dance/Ego WordPress Theme by UDTHEMES_files/myStyle.scss */
+  to {
+    right: 30px; } }
+
+@-ms-keyframes mysecond {
+  /* line 365, /home/atul/Documents/web/odyssey/me/Odyssey15/Dance/Ego WordPress Theme by UDTHEMES_files/myStyle.scss */
+  from {
+    right: -700px; }
+
+  /* line 368, /home/atul/Documents/web/odyssey/me/Odyssey15/Dance/Ego WordPress Theme by UDTHEMES_files/myStyle.scss */
+  to {
+    right: 30px; } }
+
+/* Standard syntax */
+@keyframes mysecond {
+  /* line 375, /home/atul/Documents/web/odyssey/me/Odyssey15/Dance/Ego WordPress Theme by UDTHEMES_files/myStyle.scss */
+  from {
+    right: -700px; }
+
+  /* line 378, /home/atul/Documents/web/odyssey/me/Odyssey15/Dance/Ego WordPress Theme by UDTHEMES_files/myStyle.scss */
+  to {
+    right: 30px; } }
+
+/* line 385, /home/atul/Documents/web/odyssey/me/Odyssey15/Dance/Ego WordPress Theme by UDTHEMES_files/myStyle.scss */
+#footer {
+  margin-top: 300px !important; }
+

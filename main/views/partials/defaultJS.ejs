@@ -1,0 +1,174 @@
+<script type="text/javascript">
+/* <![CDATA[ */
+( function( $ ) {
+   $( 'a[href="#"]' ).click( function(e) {
+      e.preventDefault();
+   } );
+} )( jQuery );
+/* ]]> */
+</script>
+
+
+
+<script type="text/javascript" src="/page/common/comment-reply.min.js"></script>
+        <script type="text/javascript" src="/page/common/jquery-ui.min.js"></script>
+
+
+        <script type="text/javascript" src="/page/common/jquery.mobile-touch-swipe-1.0.js"></script>
+       
+        <script type="text/javascript" src="/page/common/jquery.easing.1.3.js"></script>
+        <script type="text/javascript" src="/page/common/jquery.epicslider.js"></script>
+        <script type="text/javascript" src="/page/common/jquery.flexslider-min-edited.js"></script>
+        <script type="text/javascript" src="/page/common/waypoints.min.js"></script>
+        <script type="text/javascript" src="/page/common/jquery.parallax-1.1.3.js"></script>
+        <script type="text/javascript" src="/page/common/jquery.ajaxloading.js"></script>
+        <script type="text/javascript" src="/page/common/onepage.js"></script>
+        <script type="text/javascript" src="/page/common/jquery.fancybox-1.3.4.js"></script>
+      
+        <script type="text/javascript">
+            /* <![CDATA[ */
+            var udt_global_vars = {
+                "template_dir": "http:\/\/demos.udthemes.com\/ego\/wordpress\/light\/wp-content\/themes\/ego\/",
+                "scroll_speed": "600",
+                "contact_form_required_fields_label_ajax": "This is a required field.",
+                "contact_form_warning": "Please verify fields and try again.",
+                "contact_form_email_warning": "Please enter a valid e-mail address and try again.",
+                "contact_form_error": "There was an error sending your email. Please try again later.",
+                "contact_form_success_message": "Thanks, we got your mail and will get back to you in 24h!",
+                "contactFormDefaults_name": "Name",
+                "contactFormDefaults_email": "E-mail",
+                "contactFormDefaults_subject": "Subject",
+                "contactFormDefaults_message": "Message",
+                "commentFormDefaults_author": "Name",
+                "commentFormDefaults_email": "E-mail",
+                "commentFormDefaults_url": "http:\/\/",
+                "searchFormDefaults_search": "Search",
+                "epic_slideshow": "1",
+                "epic_autoplay": "1",
+                "epic_slide_timer": "3500",
+                "epic_slide_animation_speed": "600",
+                "epic_slide_animation": "leftToRight",
+                "epic_mobile_slide_animation": "leftToRight",
+                "epic_easing": "20",
+                "flexslider_autoplay": "1",
+                "flexslider_slide_timer": "3000",
+                "flexslider_slide_animation_speed": "600",
+                "map_controls": "1",
+                "map_image_marker": "http:\/\/demos.udthemes.com\/ego\/wordpress\/light\/wp-content\/themes\/ego\/z_usr\/images\/map_marker.png"
+            };
+            /* ]]> */
+        </script>
+        <script type="text/javascript" src="/page/common/common.js"></script>
+        <script type="text/javascript" src="/page/common/udt_shortcodes.js"></script>
+        <!--<script type="text/javascript" src="contact.js"></script>-->
+
+        <script src="/page/common/main.js"></script>
+
+        <script type="text/javascript">
+            var isMobile = false,
+                isiPad = false,
+                iOS5 = false;
+
+            if (navigator.userAgent.match(/Android/i) ||
+                navigator.userAgent.match(/webOS/i) ||
+                navigator.userAgent.match(/iPhone/i) ||
+                navigator.userAgent.match(/iPad/i) ||
+                navigator.userAgent.match(/iPod/i) ||
+                navigator.userAgent.match(/BlackBerry/i)) {
+                isMobile = true;
+            }
+
+            if (navigator.userAgent.match(/iPad/i)) {
+                isiPad = true;
+            }
+
+            if (navigator.userAgent.match(/OS 5(_\d)+ like Mac OS X/i)) {
+                iOS5 = true;
+            }
+
+            jQuery(document).ready(function($) {
+
+                $(window).load(function() {
+
+                    epic_easing_str = 'easeInOutCirc';
+
+                    var use_epic_slideshow = false;
+                    var use_epic_autoplay = false;
+
+                    if (udt_global_vars.epic_slideshow == '1') {
+                        use_epic_slideshow = true;
+                    }
+                    if (udt_global_vars.epic_autoplay == '1') {
+                        use_epic_autoplay = true;
+                    }
+
+                    //call slider
+                    $('.epicSlider').epicSlider({
+                        loop: true, //Boolean: whether slideshow should loop or not 
+                        slideShow: use_epic_slideshow, //Boolean: use slideshow or not
+                        autoPlay: use_epic_autoplay, //Boolean: autoplay uplon load or not
+                        slideShowInterval: parseInt(udt_global_vars.epic_slide_timer, 10), //Integer: slideshow cycling speed, in milliseconds
+                        transitionSpeed: parseInt(udt_global_vars.epic_slide_animation_speed, 10), //Integer: transitions speed, in milliseconds
+                        startSlide: 0, //Integer: starts at 0
+                        shuffleSlides: false, //Boolean: shuffle slides or not
+                        easing: epic_easing_str, //String: easing method - see http://jqueryui.com/demos/effect/easing.html
+                        fx: udt_global_vars.epic_slide_animation, //String: none, fade, leftToRight, topToBottom 
+                        fxmobile: udt_global_vars.epic_mobile_slide_animation, //String: mobile effect -  none, fade, leftToRight, topToBottom 
+                        pattern: true //Boolean: add pattern or not
+                    });
+                });
+            });
+
+            jQuery(document).ready(function($) {
+                /*call flexslider*/
+                $('.flexslider').flexslider({
+                    animation: "fade",
+                    slideDirection: "horizontal",
+                    slideshow: parseInt(udt_global_vars.flexslider_autoplay),
+                    slideshowSpeed: parseInt(udt_global_vars.flexslider_slide_timer),
+                    animationDuration: parseInt(udt_global_vars.flexslider_slide_animation_speed),
+                    directionNav: true,
+                    controlNav: true
+                });
+            });
+        </script>
+
+
+        <div id="fancybox-tmp" style="padding: 40px;"></div>
+        <div id="fancybox-loading" style="display: none;">
+            <div style="top: -80px;"></div>
+        </div>
+        <div id="fancybox-overlay" style="opacity: 0.8; cursor: pointer; height: 5779px; display: none; background-color: rgb(0, 0, 0);"></div>
+        <div id="fancybox-wrap" style="width: 700px; height: auto; top: 638px; left: 304px; display: none;">
+            <div id="fancybox-outer">
+                <div class="fancybox-bg" id="fancybox-bg-n"></div>
+                <div class="fancybox-bg" id="fancybox-bg-ne"></div>
+                <div class="fancybox-bg" id="fancybox-bg-e"></div>
+                <div class="fancybox-bg" id="fancybox-bg-se"></div>
+                <div class="fancybox-bg" id="fancybox-bg-s"></div>
+                <div class="fancybox-bg" id="fancybox-bg-sw"></div>
+                <div class="fancybox-bg" id="fancybox-bg-w"></div>
+                <div class="fancybox-bg" id="fancybox-bg-nw"></div>
+                <div id="fancybox-content" style="border-width: 0px; width: 700px; height: 465px;"></div>
+                <a id="fancybox-close" style="display: none;"></a><a href="javascript:;" id="fancybox-left" style="display: none;"><span class="fancy-ico" id="fancybox-left-ico"></span></a><a href="javascript:;" id="fancybox-right" style="display: none;"><span class="fancy-ico" id="fancybox-right-ico"></span></a>
+                <div id="fancybox-title" class="fancybox-title-over" style="margin-left: 0px; width: 700px; bottom: 0px; display: none;"></div>
+            </div>
+        </div>
+        </script>
+    
+    <script src="/page/common/nanoscroller_min.js"></script>
+<script>
+ jQuery(document).ready(function($) {
+              $rc = $(".round-thumb");
+     $cross = $(".spanExitButton");
+     $rc.on('click', function(){
+         
+         $('#header').fadeOut(1600);
+         $('#navv').css("padding-right","15px");
+            });
+     $cross.on('click', function(){
+        $('#header').fadeIn(1000);
+         $('#navv').css("padding-right","0px");
+     });
+            });
+</script>
